@@ -14,7 +14,7 @@ public class Main {
 
         //Calculations
         String output = "";
-        if (angle_1 + angle_2 + angle_3 <= 180) {
+        if (angle_1 + angle_2 + angle_3 == 180) {
             if (angle_1 < 90 && angle_2 < 90 && angle_3 < 90) {
                 output = "The triangle is acute.";
             } else if (angle_1 == 90 || angle_2 == 90 || angle_3 == 90) {
@@ -33,7 +33,7 @@ public class Main {
             else if ((angle_1 == angle_2) || (angle_1 == angle_3) || (angle_2 == angle_3)) {
                 output = output.concat(" The triangle is isosceles.");
             }
-            else if ((angle_1 != angle_2) && (angle_1 != angle_3) && (angle_2 != angle_3)) {
+            else {
                 output = output.concat(" The triangle is multifaceted.");
             }
         }
