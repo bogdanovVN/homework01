@@ -26,7 +26,7 @@ public class Main {
             output = "The triangle is not possible. Please enter new angles";
         }
 
-        if (!output.equals("The triangle is not possible. Please enter new angles")) {
+        if (output.equals("")) {
             if (angle_1 == 60 && angle_2 == 60) {
                 output = output.concat(" The triangle is equilateral.");
             }
